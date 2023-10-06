@@ -4,7 +4,7 @@
 
         body {
             padding: 0px;
-            margin: 0;
+            margin: ;
         }
     }
 
@@ -172,14 +172,7 @@
         margin-left: 0px;
     }
 
-    .complex {
-        width: 170.48px;
-        height: 376.91px;
-        align-items: right;
-        float: right;
-        margin-top: 27px;
-        margin-right: 15px;
-    }
+    .complex {}
 
     .hero-2-head {
         font-family: Inter;
@@ -282,6 +275,18 @@
 
     }
 
+    .complex:nth-of-type(2) {
+        display: none;
+    }
+
+    .complex:nth-of-type(3) {
+        display: none;
+    }
+
+    .complex:nth-of-type(4) {
+        display: none;
+    }
+
     .hero-3 {
         margin-left: 12px;
         margin-right: 12px;
@@ -406,6 +411,26 @@
 
     }
 
+    .group-list:nth-of-type(2) {
+        display: none;
+    }
+
+    .group-list:nth-of-type(3) {
+        display: none;
+    }
+
+    .group-list:nth-of-type(4) {
+        display: none;
+    }
+
+    .group-list:nth-of-type(5) {
+        display: none;
+    }
+
+    .group-list:nth-of-type(6) {
+        display: none;
+    }
+
     .footer {
         background: rgba(13, 110, 253, 1);
         border-radius: 4px, 4px, 0px, 0px;
@@ -445,11 +470,14 @@
 }
 
 @media(min-width:577px) {
+    * {
+        box-sizing: border-box;
+    }
+
     .container {
         width: 834px;
         height: 4453px;
         margin: auto;
-        background-color: aqua;
 
 
     }
@@ -479,7 +507,6 @@
 
     .hero-1 {
         width: 100%;
-        background-color: red;
 
 
     }
@@ -529,8 +556,6 @@
         letter-spacing: 0em;
         color: rgba(0, 0, 0, 1);
     }
-
-    .title:first-of-type {}
 
 
     .title-1 {
@@ -596,11 +621,13 @@
         height: 556px;
         top: 638px;
         left: 1.07px;
+
     }
 
     .hero-2 {
         margin-left: 12px;
         margin-right: 12px;
+
     }
 
     .hero-2-title {
@@ -617,19 +644,29 @@
 
     }
 
+    .hero-2-list {
+        list-style: none;
+        padding-left: 0px;
+        padding-bottom: px;
+        margin-bottom: 12px;
+        margin-left: 68px;
+        margin-right: 68px;
+        margin-bottom: 12px;
+    }
+
     .hero-2-photo {
-        align-items: left;
-        display: flex;
-        width: 282.27px;
+        width: 282px;
         height: 265px;
         border-radius: 4px, 0px, 0px, 4px;
+        display: inline-block;
+        padding: 0px;
+        margin-bottom: 24px;
 
     }
 
     .complex {
         display: flex;
-        align-items: right;
-        float: right;
+        flex-basis: 25%;
     }
 
     .hero-2-head {
@@ -639,18 +676,31 @@
         line-height: 29px;
         letter-spacing: 0em;
         color: rgba(21, 37, 54, 1);
-
+        text-wrap: nowrap;
+        margin-left: 28px;
+        margin-right: 34px;
+        margin-top: px;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        width: 350px;
+        height: 53px;
 
 
     }
 
     .hero-2-content {
+        width: 350px;
+        height: 60px;
         font-family: Inter;
         font-size: 12px;
         font-weight: 400;
         line-height: 15px;
         letter-spacing: 0em;
         color: rgba(104, 113, 122, 1);
+        margin-left: 28px;
+        margin-right: 28px;
+        margin-top: 11px;
 
 
     }
@@ -662,6 +712,10 @@
         line-height: 36px;
         letter-spacing: 0em;
         color: rgba(13, 110, 253, 1);
+        display: inline;
+        margin-left: 32px;
+        margin-bottom: px;
+        margin-right: 84px;
 
 
 
@@ -681,9 +735,12 @@
         left: 1px;
         padding: 4px, 7px, 4px, 7px;
         border-radius: 2px;
-        gap: 10px;
         text-align: center;
-        margin-left: 85px;
+        margin-left: 28px;
+        margin-right: 324px;
+        margin-top: 27px;
+        margin-bottom: px;
+
 
 
     }
@@ -701,8 +758,8 @@
         line-height: 19px;
         letter-spacing: 0em;
         text-align: center;
-        margin-left: 85px;
-        margin-bottom: 19px;
+
+        display: inline;
 
 
 
@@ -723,35 +780,41 @@
         letter-spacing: 0em;
         text-align: center;
         color: rgba(255, 255, 255, 1);
-        margin-top: 24px;
-        margin-left: 113px;
-        margin-right: 96px;
-        margin-bottom: 64px;
-
-
-
+        display: none;
 
     }
 
     .hero-3 {
-        margin-left: 12px;
-        margin-right: 12px;
+        margin-right: 69px;
+        margin-left: 69px;
+        margin-bottom: 96px;
 
     }
 
     .hero-3-title {
         font-family: Inter;
-        font-size: 24px;
+        font-size: 32px;
         font-weight: 700;
-        line-height: 29px;
+        line-height: 39px;
         letter-spacing: 0em;
         text-align: center;
         color: rgba(0, 0, 0, 1);
-        margin-bottom: 24px;
-        margin-top: 64px;
+        margin-top: 96px;
+        margin-bottom: 47px;
 
+    }
 
+    .group {
+        display: ;
+        list-style: none;
+        padding: 0px;
 
+    }
+
+    .group-list {
+        width: 336px;
+        height: 479px;
+        display: inline-block;
 
     }
 
@@ -759,7 +822,7 @@
         width: 336px;
         height: 200px;
         border-radius: 4px, 4px, 0px, 0px;
-        margin-bottom: 24px;
+
 
     }
 
@@ -850,9 +913,7 @@
         letter-spacing: 0em;
         text-align: center;
         color: rgba(255, 255, 255, 1);
-        margin-left: 113px;
-        margin-right: 96px;
-        margin-top: 24px;
+        margin-left: 280px;
         margin-bottom: 96px;
 
     }
@@ -860,14 +921,16 @@
     .footer {
         background: rgba(13, 110, 253, 1);
         border-radius: 4px, 4px, 0px, 0px;
-        text-align: center;
-        width: 360px;
         height: 156px;
-        top: 2117px;
-        padding: 64px, 0px, 64px, 0px;
-        gap: 10px;
+        width: 100%;
 
+    }
 
+    .developer {
+        display: block;
+        align-items: center;
+        text-align: center;
+        padding-top: 64px;
     }
 
     .ft-2 {
@@ -876,9 +939,7 @@
         font-weight: 700;
         line-height: 28px;
         letter-spacing: 0em;
-        text-align: right;
-        color: rgba(255, 255, 255, 1);
-
+        color: rgba(255, 255, 255, 1)
     }
 
     .ft-1 {
@@ -887,7 +948,6 @@
         font-weight: 400;
         line-height: 28px;
         letter-spacing: 0em;
-        text-align: right;
         color: rgba(255, 255, 255, 1);
 
     }
@@ -896,5 +956,512 @@
 
 
 @media(min-width:1200px) {
-    .container {}
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .container {
+        width: 1530px;
+        height: 3049px;
+        margin: auto;
+        background-color: aqua;
+
+
+    }
+
+    .header {
+        width: 100%;
+        height: 64px;
+        background-color: rgba(13, 110, 253, 1);
+        position: sticky;
+        top: 745px;
+
+
+
+    }
+
+    .head {
+        font-family: Inter;
+        font-size: 23px;
+        font-weight: 700;
+        line-height: 28px;
+        letter-spacing: 0em;
+        color: rgba(255, 255, 255, 1);
+        text-align: center;
+        font-family: Inter;
+
+
+    }
+
+    .hero-1 {
+        width: 100%;
+        text-wrap: wrap;
+        background-color: yellowgreen;
+        padding-left: 195px;
+    }
+
+    .hero-1-title {
+        font-family: Inter;
+        font-size: 72px;
+        font-weight: 700;
+        line-height: 87px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: rgba(0, 0, 0, 1);
+
+
+
+
+
+    }
+
+    .hero-1-content {
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0em;
+        color: rgba(108, 117, 125, 1);
+        width: 602.08px;
+        height: 84px;
+        padding-left: 92px;
+
+    }
+
+    .frame {
+        list-style: none;
+        display: flex;
+        text-align: center;
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+
+    .frame-title {
+        font-family: Inter;
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 34px;
+        letter-spacing: 0em;
+        color: rgba(0, 0, 0, 1);
+    }
+
+
+    .title-1 {
+        padding-left: -100px;
+
+    }
+
+    .title-2 {
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+
+    .title-3 {}
+
+    .frame-title {
+        font-family: Inter;
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 34px;
+        letter-spacing: 0em;
+        color: rgba(0, 0, 0, 1);
+
+    }
+
+    .title:first-of-type {
+        margin-left: ;
+    }
+
+
+    .title {
+        margin-left: 48px;
+        margin-right: 48px;
+    }
+
+    .posetive {
+        font-family: Inter;
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 34px;
+        letter-spacing: 0em;
+        margin-left: 0px;
+        color: rgba(13, 110, 253, 1);
+
+
+    }
+
+    .frame-text {
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: rgba(108, 117, 125, 1);
+        margin-top: 8px;
+        margin-left: 12px;
+        margin-right: 12px;
+
+    }
+
+    .hero-1-photo {
+        width: 750px;
+        height: 500px;
+        margin-top: -330px;
+        margin-left: 585px;
+
+
+    }
+
+    .hero-2 {
+        background-color: yellow;
+
+    }
+
+    .hero-2-title {
+        font-family: Inter;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 39px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: rgba(0, 0, 0, 1);
+        text-align: center;
+
+
+
+    }
+
+    .row {
+        w-25
+    }
+
+    w-25 {
+        display: flex;
+        width: 50%;
+    }
+
+    .hero-2-list {
+        list-style: none;
+        display: inline-block;
+        justify-content: space-around;
+        background-color: red;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+
+    }
+
+    .hero-2-photo {
+        width: 222px;
+        height: 265px;
+        border-radius: 4px, 0px, 0px, 4px;
+        display: ;
+        margin-left: 0px;
+        margin-bottom: 0px;
+
+    }
+
+    .complex {
+        margin-bottom: 24px;
+        margin-right: px;
+        margin-left: px;
+        background-color: purple;
+        display: flex;
+        flex-basis: 25%;
+
+    }
+
+    .hero-2-head {
+        font-family: Inter;
+        font-size: 24px;
+        font-weight: 800;
+        line-height: 29px;
+        letter-spacing: 0em;
+        color: rgba(21, 37, 54, 1);
+        text-wrap: nowrap;
+        margin-left: 28px;
+        margin-right: 34px;
+        margin-top: px;
+        margin-bottom: 10px;
+        align-items: center;
+        display: ;
+
+
+    }
+
+    .hero-2-content {
+        width: 350px;
+        height: 60px;
+        font-family: Inter;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 15px;
+        letter-spacing: 0em;
+        color: rgba(104, 113, 122, 1);
+        margin-left: 28px;
+        margin-right: 28px;
+        margin-top: 11px;
+        display: ;
+
+
+    }
+
+    .hero-2-text {
+        font-family: Inter;
+        font-size: 21px;
+        font-weight: 400;
+        line-height: 36px;
+        letter-spacing: 0em;
+        color: rgba(13, 110, 253, 1);
+        margin-left: 32px;
+        margin-bottom: px;
+        margin-right: 84px;
+
+
+
+    }
+
+    .bt {
+        width: 58px;
+        height: 19px;
+        font-family: Inter;
+        font-size: 9px;
+        font-weight: 600;
+        line-height: 11px;
+        letter-spacing: 0em;
+        color: rgba(255, 255, 255, 1);
+        background: rgba(108, 117, 125, 1);
+        text-wrap: nowrap;
+        left: 1px;
+        padding: 4px, 7px, 4px, 7px;
+        border-radius: 2px;
+        text-align: center;
+        margin-left: 28px;
+        margin-right: 324px;
+        margin-top: 27px;
+        margin-bottom: px;
+
+
+
+    }
+
+    .btn {
+        width: 86px;
+        height: 39px;
+        padding: 10px, 16px, 10px, 16px;
+        border-radius: 4px;
+        color: rgba(255, 255, 255, 1);
+        background: rgba(52, 58, 64, 1);
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: center;
+        display: inline;
+
+
+
+
+
+    }
+
+    .btnn {
+        width: 151px;
+        height: 50px;
+        padding: 10px, 16px, 10px, 16px;
+        border-radius: 4px;
+        background: rgba(13, 110, 253, 1);
+        font-family: Inter;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 30px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: rgba(255, 255, 255, 1);
+        display: none;
+
+    }
+
+
+    .hero-3 {
+        margin-right: 69px;
+        margin-left: 69px;
+        margin-bottom: 96px;
+
+    }
+
+    .hero-3-title {
+        font-family: Inter;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 39px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: rgba(0, 0, 0, 1);
+        margin-top: 96px;
+        margin-bottom: 47px;
+
+    }
+
+    .group {
+        display: ;
+        list-style: none;
+        padding: 0px;
+
+    }
+
+    .group-list {
+        width: 336px;
+        height: 479px;
+        display: inline-block;
+
+    }
+
+    .hero-3-photo {
+        width: 336px;
+        height: 200px;
+        border-radius: 4px, 4px, 0px, 0px;
+
+
+    }
+
+    .hero-3-bt {
+        width: 59px;
+        height: 19px;
+        top: 0.5px;
+        left: -1.19px;
+        padding: 4px, 7px, 4px, 7px;
+        border-radius: 2px;
+        gap: 10px;
+        background: rgba(108, 117, 125, 1);
+        color: rgba(255, 255, 255, 1);
+        font-family: Inter;
+        font-size: 9px;
+        font-weight: 600;
+        line-height: 11px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    .hero-3-text {
+        font-family: Inter;
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 34px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: rgba(21, 37, 54, 1);
+        margin-left: 24px;
+        margin-right: 12px;
+        text-wrap: nowrap;
+        overflow: hidden;
+
+    }
+
+    .hero-3-content {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: rgba(104, 113, 122, 1);
+        margin-left: 24px;
+        margin-right: 12px;
+
+    }
+
+    .hero-3-price {
+        font-family: Inter;
+        font-size: 21px;
+        font-weight: 400;
+        line-height: 36px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: rgba(13, 110, 253, 1);
+        margin-left: 24px;
+
+    }
+
+    .hero-3-btn {
+        width: 86px;
+        height: 39px;
+        padding: 10px, 16px, 10px, 16px;
+        border-radius: 4px;
+        color: rgba(255, 255, 255, 1);
+        background: rgba(52, 58, 64, 1);
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin-left: 70px;
+        margin-bottom: 22px;
+    }
+
+    .hero-3-btnn {
+        width: 151px;
+        height: 50px;
+        padding: 10px, 16px, 10px, 16px;
+        border-radius: 4px;
+        background: rgba(13, 110, 253, 1);
+        font-family: Inter;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 30px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: rgba(255, 255, 255, 1);
+        margin-left: 280px;
+        margin-bottom: 96px;
+
+    }
+
+    .footer {
+        background: rgba(13, 110, 253, 1);
+        border-radius: 4px, 4px, 0px, 0px;
+        height: 156px;
+        width: 100%;
+
+    }
+
+    .developer {
+        display: block;
+        align-items: center;
+        text-align: center;
+        padding-top: 64px;
+    }
+
+    .ft-2 {
+        font-family: Inter;
+        font-size: 17px;
+        font-weight: 700;
+        line-height: 28px;
+        letter-spacing: 0em;
+        color: rgba(255, 255, 255, 1)
+    }
+
+    .ft-1 {
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0em;
+        color: rgba(255, 255, 255, 1);
+
+    }
+
+
+
+
+
+
 }
